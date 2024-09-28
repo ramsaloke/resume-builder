@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import resume1 from '../assets/resume_template1.jpg';
+import resume1 from '../assets/resume_template11.jpg';
 import resume2 from '../assets/resume_template2.jpg';
 import { useNavigate } from 'react-router-dom';
 import { IconButton } from "@mui/material";

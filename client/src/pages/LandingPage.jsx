@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import '../styles/LandingPage.css';
-import img1 from '../assets/img1.jpg';
-import img2 from '../assets/img2.jpg';
-import img3 from '../assets/img3.jpg';
+// import img1 from '../assets/img1.jpg';
+import download from '../assets/download.jpg';
+import download2 from '../assets/download2.jpg';
+import download3 from '../assets/download3.jpg';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateEducation } from '../redux/educationSlice';
 import { updateProfile } from '../redux/profileSlice';
@@ -15,6 +16,7 @@ import { updateExperience } from '../redux/experienceSlice';
 import axios from 'axios';
 import { BASE_URL } from '../api';
 import { updateAchievements, updateExtraCoCurricular, updateSkills } from '../redux/extraDetailsSlice';
+import { blue } from '@mui/material/colors';
 
 const theme = createTheme({
     palette: {
@@ -104,14 +106,14 @@ export default function LandingPage() {
                 <div style={{ color: 'black' }}>
                     <div className="img-container">
                         <div className="image-container-1">
-                            <img src={img1} alt="image1" className="image-style-1" />
+                            <img src={download} alt="image1" className="image-style-1" />
                         </div>
                         <div className="image-container-2">
-                            <img src={img2} alt="image1" className="image-style-2" />
+                            <img src={download2} alt="image1" className="image-style-2" />
                         </div>
 
                         <div className="image-container-3">
-                            <img src={img3} alt="image1" className="image-style-3" />
+                            <img src={download3} alt="image1" className="image-style-3" />
                         </div>
                     </div>
                     <div >
@@ -122,7 +124,7 @@ export default function LandingPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 1 }}
                                 >
-                                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: '800' }}>
+                                    <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: '800' , color: 'black'}}>
                                         Build Your Professional Resume
                                     </Typography>
                                 </motion.div>
@@ -131,7 +133,7 @@ export default function LandingPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 1, delay: 0.5 }}
                                 >
-                                    <Typography variant="h5" component="h1" gutterBottom>
+                                    <Typography variant="h5" component="h1" gutterBottom sx={{ color: 'black'  }}>
                                         Create a resume that stands out with our easy-to-use builder
                                     </Typography>
                                 </motion.div>
@@ -140,7 +142,7 @@ export default function LandingPage() {
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 1, delay: 1 }}
                                 >
-                                    <Button onClick={handleGetStarted} variant='outlined' sx={{ borderRadius: '30px', color: 'black', backgroundColor: "var(--btnColor)", "&:hover": { backgroundColor: "var(--landBtnHover)", border: 'none' }, border: 'none', fontWeight: 600 }} size="large">
+                                    <Button onClick={handleGetStarted} variant='outlined' sx={{ borderRadius: '30px', color: 'green', backgroundColor: "var(--btnColor)", "&:hover": { backgroundColor: "var(--landBtnHover)", border: 'none' }, border: 'none', fontWeight: 600 }} size="large">
                                         Get Started
                                     </Button>
                                 </motion.div>

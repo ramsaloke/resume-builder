@@ -37,7 +37,7 @@ function App() {
               <Route element={<Layout />}>
                 <Route path='/user-profile' element={<UserProfile />} />
                 <Route path='/templates' element={<Templates />} />
-                {/* <Route path='/create-resume' element={<Home />} /> */}
+                <Route path='/create-resume' element={<Home />} />
                 <Route element={<ResumeLayout />}>
                   <Route path='/profile' element={<Profile />} />
                   <Route path='/education' element={<Education />} />

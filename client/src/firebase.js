@@ -9,12 +9,12 @@ import { getAnalytics } from "firebase/analytics";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    authDomain: "resume-builder-97419.firebaseapp.com",
-    projectId: "resume-builder-97419",
-    storageBucket: "resume-builder-97419.appspot.com",
-    messagingSenderId: "1049637171309",
-    appId: "1:1049637171309:web:309feb043ca848892b8f64",
-    measurementId: "G-FMVD6HHJMR"
+    authDomain: "resume-builder-1742c.firebaseapp.com",
+    projectId: "resume-builder-1742c",
+    storageBucket: "resume-builder-1742c.appspot.com",
+    messagingSenderId: "823093464463",
+    appId: "1:823093464463:web:8dbbf218cddc5cd4998ffa",
+    // measurementId: "G-FMVD6HHJMR"
 };
 
 // Initialize Firebase

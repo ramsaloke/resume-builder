@@ -146,7 +146,7 @@ const Navbar = () => {
             <Link to={'/'} className="resume-builder-link"> RESUME BUILDER</Link>
           </Typography>
 
-          {currentUser ? (
+          {currentUser !== undefined && currentUser !== null ? (
             <>
               <Button color="inherit" onClick={handleSectionsClick}>
                 Sections
