@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Resume Builder
 
 ## Description
@@ -66,3 +67,7 @@ Open your browser and navigate to http://localhost:3000 to view the application.
 =======
 # resume_builder_website
 >>>>>>> 5de708c95b418125328362383c9f348fb5c5b0bd
+=======
+# resume_builder_App
+resume builder using mern stack
+>>>>>>> 318a3d6f6e06bf323b63bad1e71e80983d5eaf1a
